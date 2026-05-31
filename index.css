@@ -1,15 +1,46 @@
-#blue{
-    color: blue;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
 }
-#green{
-    color: green;
+
+.logo{
+    width: 100px;
 }
-#black{
-    color: black ;
+
+.nav-items>ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
 }
-#purple{
-    color: purple;
+
+.nav-items>ul>li{
+    padding: 10px;
+    margin: 10px;
 }
-#red{
-    color: red;
+
+.res-card{
+    padding: 5px;
+    width: 300px;  
+    background-color: #f0f0f0;
+    margin: 5px;
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+}
+
+.dish-logo{
+    width: 100%;
+}
+
+.res-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
