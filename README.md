@@ -20,3 +20,10 @@
 - https
 - Different dev and prod bundlers
 - Tree shaking - removes all the unused code for use
+
+# Food delivering app
+
+# React Hooks
+- (normal js utility fucntions)
+- useState() - uses to create super powerful state variables in react
+- useEffect()
