@@ -15,7 +15,6 @@ body {
     margin: 0 auto;
 }
 
-/* ---------- Header ---------- */
 .header {
     display: flex;
     justify-content: space-between;
@@ -53,17 +52,81 @@ body {
     background-color: #fff4ee;
 }
 
-/* ---------- Body ---------- */
 .body {
     padding: 24px;
 }
 
 .top-rate-res-filt-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 24px;
-    cursor: pointer;
+    flex-wrap: wrap;
 }
 
-/* ---------- Restaurant list ---------- */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-inpt {
+    min-width: 220px;
+    max-width: 360px;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-inpt:focus {
+    border-color: #ff5200;
+    box-shadow: 0 0 0 3px rgba(255, 82, 0, 0.12);
+}
+
+.top-rate-res-filt-btn button {
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff5200;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.top-rate-res-filt-btn button:hover {
+    background-color: #e04800;
+}
+
+.shimmer-container {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.shimmer-card {
+    height: 300px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e4e4e4 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
 .res-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
