@@ -26,4 +26,4 @@
 # React Hooks
 - (normal js utility fucntions)
 - useState() - uses to create super powerful state variables in react
-- useEffect()
+- useEffect() - if we want do anything after rendering the componenet, then we will use useEffect hook (for eg side effects like api's fetching)
