@@ -27,3 +27,7 @@
 - (normal js utility fucntions)
 - useState() - uses to create super powerful state variables in react
 - useEffect() - if we want do anything after rendering the component, then we will use useEffect hook (for eg side effects like api's fetching)
+
+# 2 types of routing in web apps
+- Client side routing 
+- Server side routing
